@@ -1,0 +1,43 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .counter {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+  }
+  
+ .timer {
+    background-color: lightgray;
+    color: #d9534f;
+    padding: 20px;
+    margin: 5px;
+    width: 180px;
+    border: 3px solid #d9534f;
+    border-radius: 5px;
+    box-shadow: 5px 5px #d9534f;
+  }
+
+  @media (max-width: 768px) { 
+    .counter {
+      font-size: 1.2em;
+    }
+    .timer {
+      padding: 10px;
+      margin: 0 5px;
+      width: 80px;
+    }
+  }
+
+  @media (max-width: 320px) { 
+    .counter {
+      font-size: 0.9em;
+    }
+    .timer {
+      padding: 10px;
+      margin: 0 5px;
+      width: 60px;
+    }
+  }

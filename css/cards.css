@@ -1,0 +1,55 @@
+.card1 {
+    width: 30%;
+    height: 500px;
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 5px black;
+    animation: slider 20s linear infinite;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card2 {
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    width: 20%;
+    height: 350px;
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 5px black;
+    animation: slider 20s linear infinite;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card3 {
+    position: absolute;
+    top: 35%;
+    right: 13%;
+    width: 20%;
+    height: 350px;
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 5px black;
+    animation: slider 20s linear infinite;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes slider {
+    0% { background-image: url(../img/foto\ 4.jpeg);}
+    35% { background-image: url(../img/foto\ 3.jpeg);}
+    60% { background-image: url(../img/foto\ 2.jpeg);}
+    100% { background-image: url(../img/foto\ 1.jpeg);}
+}
+
+@media (max-width: 768px) { 
+    .card1 {
+        width: 300px;
+        height: 400px;
+    }
+    .card2, .card3 {
+        display: none;
+    }
+}

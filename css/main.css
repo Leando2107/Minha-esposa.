@@ -1,0 +1,185 @@
+body, html {
+    background-image: url("../img/fundo.png");
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+iframe {
+    width: 1000px;
+    height: 600px;
+}
+h1 {
+    font-size: 45px;
+    text-shadow: 5px 2px #d9534f;
+    padding: 20px;
+}
+.subtitulo {
+    font-size: 35px;
+    text-shadow: 5px 2px #d9534f;
+}
+h2 {
+    margin: 15px 5px 0px 5px;
+}
+h3 {
+    margin: 5px 5px 0px 5px;
+}
+hr {
+    width: 80%;
+    margin: 20px 0 20px 0;
+}
+p {
+    font-size: 30px;
+}
+#paragrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+#garden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+#caroussel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+#history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.history {
+    display: flex;
+    flex-direction: row;
+}
+.sobre1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-right: 80px;
+    border-right: 1px solid white;
+}
+.sobre2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-left: 80px;
+    border-left: 1px solid white;
+}
+.vertical {
+    rotate: 90deg;
+}
+.perfil-1 {
+    background-image: url("../img/leandro/leandro\ 1.jpeg");   
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 300px;
+    box-shadow: 8px 5px #d9534f;
+    cursor: auto;
+}
+
+.perfil-2 {
+    background-image: url("../img/bianca/bianca\ 1.jpeg");   
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 300px;
+    box-shadow: 8px 5px #d9534f;
+    cursor: pointer;
+}
+
+.perfil-1:hover {
+    animation: rotate1 1.3s linear forwards;
+}
+
+.perfil-2:hover {
+    background-size: cover;
+    animation: rotate2 1.3s linear forwards;
+}
+
+@keyframes rotate1 {
+    0% { 
+        transform: rotateY(0s);
+        background-image: url("../img/leandro/leandro\ 1.jpeg");  
+    }
+    100% { 
+        transform: rotateY(180deg);
+        background-image: url("../img/leandro/leandro\ 2.jpeg");  
+    }
+}
+
+@keyframes rotate2 {
+    0% { 
+        transform: rotateY(0deg);
+        background-image: url("../img/bianca/bianca\ 1.jpeg"); 
+    }
+    100% { 
+        transform: rotateY(180deg);
+        background-image: url("../img/bianca/bianca\ 2.jpeg" );
+    }
+}
+
+@media (max-width: 768px) { 
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 15px;  
+    }
+    img {
+        width: 90%;
+    }
+    p {
+        font-size: 18px;
+    }
+    .subtitulo {
+        font-size: 30px;
+        text-shadow: 5px 2px #d9534f;
+    }
+    #paragrafo {
+        width: 85%;
+    }
+    section {
+        width: 80%;
+    }
+    iframe {
+        width: 350px;
+        height: 200px;
+    }
+    .sobre1 {
+        padding: 0 20px 0 0;
+    }
+    .sobre2 {
+        padding: 0 0 0 20px;
+    }
+    .perfil-1, .perfil-2 {
+        width: 150px;
+        height: 150px;
+    }
+}
